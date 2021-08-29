@@ -108,27 +108,6 @@ enum PinDef {
 
 } ;
 
-enum ChDef {
-       Ch1  = PinDef::pin7,
-       Ch2  = PinDef::pin11,
-       Ch3  = PinDef::pin12,
-       Ch4  = PinDef::pin13,
-       Ch5  = PinDef::pin15,
-       Ch6  = PinDef::pin16,
-       Ch7  = PinDef::pin18,
-       Ch8  = PinDef::pin22,
-       Ch9  = PinDef::pin26, 
-       Ch10 = PinDef::pin29,
-       Ch11 = PinDef::pin31,
-       Ch12 = PinDef::pin32,
-       Ch13 = PinDef::pin33,
-       Ch14 = PinDef::pin35,
-       Ch15 = PinDef::pin36,
-       Ch16 = PinDef::pin37,
-
-} ;
-
-
 int gpioExport ( jetsonGPIO gpio ) ;
 int gpioUnexport ( jetsonGPIO gpio ) ;
 int gpioSetDirection ( jetsonGPIO, pinDirection out_flag ) ;

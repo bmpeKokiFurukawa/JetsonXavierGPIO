@@ -39,7 +39,7 @@ int main(int argc, char *argv[]){
 
     cout << "Testing the GPIO Pins" << endl;
 
-    ChDef redLED = Ch1 ;     // Ouput
+    PinDef redLED = pin7 ;     // Ouput
     cout << "Output pin:1 (gpio" << redLED << ")" << endl;
     //jetsonTX1GPIONumber pushButton = gpio38 ; // Input
     // Make the button and led available in user space
