@@ -61,7 +61,7 @@ enum pinValues {
     on = 1
 }  ;
 
-// sysfs GPIO number
+// pin number = sysfs GPIO number
 enum jetsonXavierGPIONumber {
        gpio422 = 422,      // Pin  7
        gpio428 = 428,      // Pin 11
@@ -70,7 +70,7 @@ enum jetsonXavierGPIONumber {
        gpio393 = 393,      // Pin 15
        gpio256 = 256,      // Pin 16
        gpio344 = 344,      // Pin 18
-       gpio344 = 344,      // Pin 21
+       gpio492 = 492,      // Pin 21
        gpio417 = 417,      // Pin 22
        gpio495 = 495,      // Pin 26
        gpio251 = 251,      // Pin 29
@@ -84,6 +84,51 @@ enum jetsonXavierGPIONumber {
        gpio352 = 352,      // Pin 40
 
 } ;
+
+enum PinDef {
+       pin7  = jetsonXavierGPIONumber::gpio422,
+       pin11 = jetsonXavierGPIONumber::gpio428,
+       pin12 = jetsonXavierGPIONumber::gpio351,
+       pin13 = jetsonXavierGPIONumber::gpio424,
+       pin15 = jetsonXavierGPIONumber::gpio393,
+       pin16 = jetsonXavierGPIONumber::gpio256,
+       pin18 = jetsonXavierGPIONumber::gpio344,
+       pin21 = jetsonXavierGPIONumber::gpio492,
+       pin22 = jetsonXavierGPIONumber::gpio417,
+       pin26 = jetsonXavierGPIONumber::gpio495, 
+       pin29 = jetsonXavierGPIONumber::gpio251,
+       pin31 = jetsonXavierGPIONumber::gpio250,
+       pin32 = jetsonXavierGPIONumber::gpio257,
+       pin33 = jetsonXavierGPIONumber::gpio248,
+       pin35 = jetsonXavierGPIONumber::gpio354,
+       pin36 = jetsonXavierGPIONumber::gpio429,
+       pin37 = jetsonXavierGPIONumber::gpio249,
+       pin38 = jetsonXavierGPIONumber::gpio353,
+       pin40 = jetsonXavierGPIONumber::gpio352,
+
+} ;
+
+enum ChDef {
+       Ch1  = PinDef::pin7,
+       Ch2  = PinDef::pin11,
+       Ch3  = PinDef::pin12,
+       Ch4  = PinDef::pin13,
+       Ch5  = PinDef::pin15,
+       Ch6  = PinDef::pin16,
+       Ch7  = PinDef::pin18,
+       Ch8  = PinDef::pin22,
+       Ch9  = PinDef::pin26, 
+       Ch10 = PinDef::pin29,
+       Ch11 = PinDef::pin31,
+       Ch12 = PinDef::pin32,
+       Ch13 = PinDef::pin33,
+       Ch14 = PinDef::pin35,
+       Ch15 = PinDef::pin36,
+       Ch16 = PinDef::pin37,
+
+} ;
+
+
 int gpioExport ( jetsonGPIO gpio ) ;
 int gpioUnexport ( jetsonGPIO gpio ) ;
 int gpioSetDirection ( jetsonGPIO, pinDirection out_flag ) ;
