@@ -61,6 +61,7 @@ enum pinValues {
     on = 1
 }  ;
 
+// sysfs GPIO number
 enum jetsonXavierGPIONumber {
        gpio422 = 422,      // Pin  7
        gpio428 = 428,      // Pin 11
@@ -68,8 +69,10 @@ enum jetsonXavierGPIONumber {
        gpio424 = 424,      // Pin 13
        gpio393 = 393,      // Pin 15
        gpio256 = 256,      // Pin 16
+       gpio344 = 344,      // Pin 18
        gpio344 = 344,      // Pin 21
        gpio417 = 417,      // Pin 22
+       gpio495 = 495,      // Pin 26
        gpio251 = 251,      // Pin 29
        gpio250 = 250,      // Pin 31
        gpio257 = 257,      // Pin 32
